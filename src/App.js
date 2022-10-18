@@ -37,18 +37,3 @@ export default function App() {
       </>
     )
   }
-
-
-// function App(){
-//   //  const abc(){
-//     const navigate = useNavigate();
-
-   
-
-//     navigate('/Logged');
-//   return(
-// {/* <button onClick={abc}>click</button> */}
-//   )
-
-// };
-// export default App;
