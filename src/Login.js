@@ -28,25 +28,10 @@ import FormControl from '@mui/material/FormControl';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import { useNavigate } from 'react-router-dom';
-// import Home from './Home';
 import Snackbar from '@mui/material/Snackbar';
 import CloseIcon from '@mui/icons-material/Close';
 
 
-
-
-// function Copyright(props) {
-//   return (
-//     <Typography variant="body2" color="text.secondary" align="center" {...props}>
-//       {'Copyright © '}
-//       <Link color='#4a148c'>
-//         Your Website
-//       </Link>{' '}
-//       {new Date().getFullYear()}
-//       {'.'}
-//     </Typography>
-//   );
-// }
 
 const theme = createTheme();
 
@@ -60,8 +45,7 @@ function Logi() {
   const [errorLogin, setErrorLogin] = useState('');
   const [open, setOpen] = useState(false);
 
-  // const [name, setName] = useState('');
-  //  const [pwd, setPwd] = useState('');
+ 
 
   //  const togglePassword = () => {
   //   setPasswordShown(!passwordShown);
@@ -112,9 +96,6 @@ function Logi() {
     navigate('/Newuser')
   }
 
-  // // const handlePasswordChange = (prop) => (event) => {
-  // //   setValues({ ...values, [prop]: event.target.value });
-  // // };
 
   const handleSubmit = (event) => {
 
@@ -205,7 +186,6 @@ function Logi() {
                   Password
                 </InputLabel>
                 <OutlinedInput
-                  // margin="normal"
                   required
                   fullWidth
                   name="password"
@@ -214,7 +194,6 @@ function Logi() {
                   // // type={value.showPassword ? "text" : "password"}        
                   id="password"
                   autoComplete="current-password"
-                  // autoFocus
                   onChange={e => setPass(e.target.value)}
                   value={pass}
                   //onChange={e => setPass(e.target.value)}
@@ -231,9 +210,6 @@ function Logi() {
                     </InputAdornment>
 
                   }
-
-
-                // label="password"
                 />
 
               </FormControl>
